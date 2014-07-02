@@ -1,0 +1,50 @@
+Make Login & My superpac only red. 
+
+sign up too small, positioning off. 
+bar in between field & corruption
+
+link logo to home
+
+Make heading for signup thing in sidebar.  
+
+give white text a stroke
+
+#element {
+    color: yellow;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+Progress Bar: Options
+1) Multiple Bars
+2) Million Dollar Checkpoints. (Write down ideas - see what we'll work on) 
+
+uservoice
+
+add list of people we want to contact
+
+Joshua Gordon Levitt
+Jason Alexander
+
+People we could reach:
+
+We were mulling over different ideas and wanted to pass on some to you and the team. 
+Re: the Progress Bar. - Even though we're not guaranteed a "staged match" at each $1M, I would recommend having the Progress bar contain "checkpoints" regardless at every $1M.  
+
+Instead of guaranteeing the match at every $1M, we could partner with various celebrities and organizations to put out "bonuses" that will be released at every checkpoint.  For example, we may have Jason Alexander and Joshua Gordon-Levitt produce a video for us.  Instead of releasing it immediately, we could promise to release it as soon as the progress bar hits a "checkpoint."  This gives people a reason to pledge even if they don't believe the $5M will be completed.  
+
+Here are some ideas for celebrities and organizations we could reach out to:
+
+-- Rooster Teeth/Red v. Blue (Based in Austin, TX, Shannon McCormick [who plays the star of Project Freelancer,] could hook me up with the creators of Red Vs. Blue.)
+-- Adam Savage/Mythbusters (I've gotten in touch with Mr. Savage before via Metafilter for my 2007 project, "Makers," and it may be possible to get in contact with him again.)  
+-- Wil Wheaton 
+-- John Hodgman
+-- Gabe Newell/Valve Software (Newell actually does a good job of answering his e-mail. One thing that might be doable would be if Newell could promise to hold their upcoming Steam Summer Sale early if we reach, say $4M.  Last year, the Steam Sale was launched on July 11th, so aiming for late June might be doable.)
+-- Humble Bundle (Developers could tie their software to pledges) 
+-- Cards against Humanity (Strongly in favor of reform, can release a card pack for a low checkpoint - maybe $1M) The game is available under a non-free Creative Commons license BY-NC-SA.
+-- Lauren Faust (Creator of children's cartoons, notably Powerpuff Girls & My Little Pony - very strong internet following) 
+-- Michael Moore
+-- Matt Stone and Trey Parker 
+-- Schmoyoho (Songify the News)
+-- Bad Lip Reading (Bad Lip Reading)
+-- George RR Martin - One idea with him specificially is to have him hold a character in his famous "Game of Thrones" series for ransom.  "If you fail to meet the $5M goal, I will kill off (fan-favorite) Tyrion Lannister in the last book." 
+

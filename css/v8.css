@@ -1,0 +1,389 @@
+/* 
+========================================================================
+              / by --- Elegant Division (http://e-div.com)
+    Markup  --- for -- http://mayday.us/
+              \ in --- 2014
+========================================================================
+*/
+
+/* Common styles
+======================================================================== */
+button,
+input,
+select,
+textarea {
+	color: #000;
+}
+
+body {
+	font: normal 1em/1.4 'Merriweather', Georgia, "Times New Roman", Times, serif;
+	color: #222;
+}
+
+a {
+	color: #16415e;
+	outline: none !important;
+}
+a:hover {
+	text-decoration: none;
+}
+
+p {
+	font-size: 18px;
+	line-height: 1.5em;
+	margin: 1.2em 0;
+}
+h2 {
+	font-size: 41px;
+	color: #313945;
+	margin: 0 0 .5em;
+}
+
+.wrap {
+	margin: 0 auto;
+	width: 790px;
+}
+
+
+.button {
+	font: 700 29px/50px 'Questrial', Arial, sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #3f4651;
+	letter-spacing: 1px;
+	display: inline-block;
+	border: 2px solid #3f4651;
+	background: #6CFF7E no-repeat 100% 50%;
+	height: 50px;
+	padding: 0 30px;
+	border-radius: 30px;
+	
+	-webkit-user-select: none;  
+	-moz-user-select: none;    
+	-ms-user-select: none;      
+	user-select: none;
+}
+.button:hover {
+	background-color: rgb(255, 255, 255);
+	border-color: rgb(94, 255, 107);
+}
+.button.arrow {
+	padding-right: 54px;
+	background-image: url(../images/button-array.png);
+}
+.btn-group {
+	text-align: center;
+	margin: 77px auto 0;
+	width: 860px;
+}
+	.btn-group .button {
+		margin: 0 17px;
+	}
+/* // Common styles - end */
+
+
+/* Site styles
+======================================================================== */
+#header {
+	background: #f6f4ec url(../images/header-background.jpg);
+	padding: 18px 0 55px;
+}
+	#header .wrap {
+		width: 1095px;
+	}
+		#header .logo {
+			background-image: url(../images/logoV8.png);
+			width: 230px;
+			height: 26px;
+		}
+		#header blockquote {
+			float: right;
+			font-style: italic;
+			font-size: 15px;
+			margin: 3px 6px 0 0;
+			color: #313945;
+		}
+		#header blockquote:before {
+			content: "“";
+		}
+		#header blockquote:after {
+			content: "”";
+		}
+		
+		#header .inner {
+			border-top: 1px solid #8d98ac;
+			margin: 16px 0 0;
+			padding: 40px 0 0;
+		}
+			#header .inner .content {
+				width: 745px;
+			}
+				#header .content h1 {
+					margin: 0 0 29px;
+					font-size: 40px;
+					font-weight: 400;
+					line-height: 1.3em;
+					color: #313945;
+					letter-spacing: .5px;
+				}
+				#header .content p {
+					margin: 12px 0 0;
+					font-size: 13px;
+					color: #c33;
+					word-spacing: 2px;
+				}
+				
+		#header .inner .aside {
+			width: 264px;
+			color: #727373;
+			margin-top: 4px;
+		}
+			#header .aside dl {
+				border-bottom: 1px solid #ddd;
+				padding-bottom: 16px;
+				margin-bottom: 18px;
+			}
+			#header .aside dl:last-child {
+				border: none;
+				padding-bottom: 0;
+				margin-bottom: 0;
+			}
+				#header .aside dt {
+					font: normal 34px/1em 'Questrial', Arial, sans-serif;
+					margin-bottom: 5px;
+					letter-spacing: -.5px;
+				}
+				#header .aside dd {
+					font-size: 16px;
+					letter-spacing: -.1px;
+					margin-left: 4px;
+				}
+
+#breadcrumbs {
+	text-align: center;
+	border: solid #ddd;
+	border-width: 1px 0;
+	line-height: 76px;
+	font-size: 22px;
+}
+
+	#breadcrumbs li {
+		display: inline-block;
+		background: url(../images/star.png) no-repeat 100% 50%;
+		padding-right: 41px;
+		margin-right: 24px;
+	}
+	#breadcrumbs li:last-child {
+		background: none;
+		padding-right: 0;
+		margin-right: 0;
+	}
+		#breadcrumbs a {
+			text-decoration: none;
+		}
+		
+#videobox {
+	padding: 46px 0 65px;
+	background-color: #f9fbfc;
+	text-align: center;
+}
+	#videobox .video {
+		margin: 0 auto 45px;
+		display: block;
+		background-color: #241d1d;
+	}
+		
+#about-mayday {
+	padding: 60px 0 88px;
+	text-align: center;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAGCAYAAAACEPQxAAAAHUlEQVQImWM4Y2z8n+GMsfF/hv///0MJMcc4CAEA8s8Pw3YWtQgAAAAASUVORK5CYII=) repeat-x 0 0;
+}
+#about-mayday .goals {
+		margin-top: 66px;
+		font-size: 14px;
+		margin-bottom: 40px;
+	}
+
+		#about-mayday .goals dl {
+			float: left;
+			width: 47%;
+			margin-right: 6%;
+		}
+		#about-mayday .goals dl:last-child {
+			margin-right: 0;
+		}
+			#about-mayday .goals .circle {
+				width: 67px;
+				height: 67px;
+				margin: 0 auto 18px;
+				border: 2px solid #4a6b82;
+				border-radius: 50%;
+				position: relative;
+				background: #fff no-repeat 50% 50%;
+			}
+			#about-mayday .goals .circle.checked {
+				background-image: url(../images/tick.png);
+			}
+			#about-mayday .goals .circle.border-xxl:after {
+				content: "";
+				position: absolute;
+				width: 3000px;
+				height: 2px;
+				background-color: #16415e;
+				top: 32px;
+				right: 0;
+				z-index: -1;
+			}
+			#about-mayday .goals dt {
+				font: normal 45px/1em 'Questrial', Arial, sans-serif;
+				color: #727272;
+				margin-bottom: 18px;
+			}
+			#about-mayday .goals dd {
+				word-spacing: .6px;
+				line-height: 1.5em;
+			}
+			
+#fixing-democracy {
+	padding: 60px 0 60px;
+	text-align: center;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAGCAYAAAACEPQxAAAAHUlEQVQImWM4Y2z8n+GMsfF/hv///0MJMcc4CAEA8s8Pw3YWtQgAAAAASUVORK5CYII=) repeat-x 0 0, #f9fbfc;
+}		
+	#fixing-democracy h2 {
+		margin-bottom: .8em;
+	}
+			
+  #help-us {
+  	padding: 54px 0 100px;
+  	text-align: center;
+  	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAGCAYAAAACEPQxAAAAHUlEQVQImWM4Y2z8n+GMsfF/hv///0MJMcc4CAEA8s8Pw3YWtQgAAAAASUVORK5CYII=) repeat-x 0 0;
+  }
+
+/* Responsive stuff
+======================================================================== */
+@media screen and (max-width: 1095px) {
+	.wrap {
+		width: 90%;
+	}
+	#header {
+		padding: 40px 0 35px;
+	}
+		#header .wrap {
+			width: 800px;
+		}
+			#header .logo {
+				transform: scale(1.5);
+				margin-left: 60px;
+			}
+			#header blockquote {
+				width: 370px;
+				font-size: 22px;
+				margin: -17px 0 0;
+			}
+			
+		#header .inner {
+			border: none;
+			margin: 50px 0 0;
+			padding: 0;
+			position: relative;
+		}
+			#header .inner .content {
+				width: auto;
+				text-align: center;
+			}
+				#header .content h1 {
+					margin: 0 0 160px;
+					font-size: 34px;
+					line-height: 1.6em;
+				}
+				#header .content p {
+					margin: 16px 0 0;
+					font-size: 22px;
+				}
+				#header .content .button {
+					height: 115px;
+					line-height: 115px;
+					font-size: 52px;
+					padding: 0 68px;
+					border-radius: 115px;
+					background-image: url(../images/button-array_bigger.png);
+				}
+				#header .content .button.arrow {
+					padding-right: 122px;
+				}
+				
+			#header .inner .aside {
+				width: auto;
+				float: none;
+				position: absolute;
+				top: 150px;
+				left: 90px;
+			}
+				#header .inner .aside dl {
+					float: left;
+					width: 258px;
+					border: none;
+					padding: 0;
+					margin: 0;
+				}
+				#header .inner .aside dl:first-child {
+					width: 190px;
+				}
+				
+	#breadcrumbs {
+		font-size: 25px;
+	}
+				
+		#about-mayday .goals {
+			font-size: 18px;
+		}
+
+		#videobox p {
+			font-size: 26px;
+		}
+	
+	#help-us {
+		padding: 54px 0;
+	}
+		#help-us .btn-group {
+			margin-top: 40px;
+		}
+}
+
+
+
+.readmore { 
+	display: block;
+	margin: auto;
+
+}
+
+#footer {
+	text-align: center
+}
+
+#footer .footer_nav {
+	clear: both;
+	height: 50px;
+	text-align: center;
+}
+
+#footer .disclaimer {
+	margin: 30px auto 50px;
+	display: inline-block;
+	border: 1px solid #999;
+	color: #999;
+	padding: 15px;
+}
+
+#footer .copyright {
+	padding: 0 0 50px;
+	font-size: 14px;
+	color: #999;
+}
+
+#footer .footer_nav a {
+	padding: 0 15px;
+	color: #666;
+	font-size: 16px;
+}

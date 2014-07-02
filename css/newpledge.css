@@ -1,0 +1,180 @@
+body{
+	background: #204659;
+}
+#pledgeTopBar{
+	height: 70px;
+	padding: 0 0 10px;
+	background: #204659;
+	text-align: center;
+	z-index: 5000;
+	top: 0px;
+	position: fixed;
+	display: block;
+	left:0px;
+	width: 100%;
+}
+#pledgeTopBar h3{
+	text-align: center;
+	font-weight: bold;
+	font-size: 3.5em;
+	margin: 0;
+	padding: 0 0 0;
+	color: #fff;
+}
+
+#pledgeTopBar h3 span{
+	font-weight:normal;
+}
+.jumbotron{
+	background: #204659 url(/images/05-midwest.jpg) no-repeat;
+	min-height:1000px;
+	background-position:right top; 
+	margin-top: 70px;
+}
+
+#newpledge .footer{
+	background: #204659;
+}
+
+#pledgeBox{
+	background-color: rgb(255, 255, 255);
+	color: rgb(82, 84, 87);
+	display: inline-block;
+	height: auto;
+	min-height: 550px;
+	padding-top: 30px;
+	position: relative;
+	vertical-align: top;
+	width: 450px;
+}
+
+#pledgeBox .info {
+	padding: 0 30px;
+}
+
+
+#pledgeBox .info h2{
+	margin: 0;
+	font-size: 25px;
+	
+	color: #004788;
+}
+#pledgeBox .info p{
+	font-size: 16px;
+}
+
+.stepContainer{
+	padding: 10px;
+	background: url(/images/header-background.jpg) repeat;
+	border: 1px solid #e1e1e1;
+}
+
+.stepContainer{
+	text-align: center;
+}
+
+ul.steps{
+	text-align: center;
+	font-size: 0;
+	margin:0;
+	width:100%;
+	padding:0;
+}
+
+li.step{
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	margin: 0 3px;
+	width: 74px;
+	max-width: 120px;
+	color: #919599;
+	font-size: 14px;
+	font-size: 1.4rem;
+}
+
+li.step span{
+	display: block;
+	background: #919599;
+	border-top: 4px solid #74777a;
+	margin: 4px auto 0;
+	padding: 0 4px 4px;
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
+	line-height: 1.75em;
+	color: #FFF;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	font-size: 1.4rem;
+}
+li.step.active span{
+	background: #27ae60;
+	border-color: #1f8b4d;
+}
+li.step.active {
+	font-weight: bold;
+	color: #4d4d4d;
+}
+#rules{
+	margin:  70px 0px 50px 0px;
+}
+#rules p{
+	margin-bottom: 10px; 
+	font-size: 14px; 
+	font-weight: normal;
+}
+.step-1-container{
+	width: 80%;
+	margin: 20px auto;
+	
+}
+.step-2-container{
+	margin: 20px auto;
+}
+.ammount-button{
+	background-color: rgb(41, 128, 185);
+	box-shadow: rgba(0, 0, 0, 0.2) 0px -4px 0px 0px inset;
+	border-radius: 5px;
+	color: #fff;
+	display: inline-block;
+	font-size: 20px;
+	font-weight: bold;
+	height: 40px;
+	padding: 5px;
+	margin: 20px 5px 0px 5px;
+	text-align: center;
+	vertical-align:middle;
+	text-shadow: rgb(136, 136, 136) 0px 1px 0px;
+	width: 28%;
+	cursor: pointer;
+}
+
+#pledgeButton.ammount-button:hover{
+	color: #fff;
+}
+.ammount-button:hover{
+	box-shadow: none;
+}
+
+@media (max-width: 600px){
+	#pledgeBox{
+		width: 100%;
+		height: auto;
+		margin: auto;
+	}
+	
+}
+@media (max-width: 500px){
+
+	.jumbotron{
+		padding: 0;
+		height: auto;
+		background: #204659;
+	}
+}
+.step-2-container{
+display:none;
+}
+

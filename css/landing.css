@@ -1,0 +1,141 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body { height: 100%; min-width: 900px; }
+
+body {
+  background-color: #FFF;
+  font: 13.34px;
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: small;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%; }
+
+h1 { margin-bottom: 1em; }
+p { margin: 1em 0; }
+
+a         { color: #00a; }
+a:hover   { color: #000; }
+a:visited { color: #a0a; }
+
+
+
+.inner {
+  position: relative;
+  margin: 0 auto;
+}
+.pledge, .pledge:visited {
+  background-color: #d53a38;
+  border-radius: 5px;
+  color: #FFF;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  display: inline-block;
+}
+.pledge:hover {
+  background: #b73230;
+  text-decoration: none;
+  color: #fff;
+}
+
+.stormflag {
+  background: url('../images/full_header.jpg') no-repeat top center #0c151a;
+  background-size: cover;
+}
+  
+#landing h1 {
+  font-size:32px;
+}
+
+#footer {
+}
+#footer .footer_nav {
+  clear: both;
+  height: 50px;
+  text-align: center;
+}
+#footer .footer_nav a {
+  padding: 0 15px;
+  color: #666;
+  font-size: 16px;
+}
+#footer .disclaimer {
+  width: 640px;
+  margin: 30px auto 50px;
+  position: relative;
+  border: 1px solid #999;
+  color: #999;
+  padding: 15px;
+  text-align: center;
+}
+#footer .disclaimer a {
+  color: #999;
+}
+#footer .copyright {
+  padding: 0 0 50px;
+  font-size: 14px;
+  color: #999;
+}
+
+body#landing #hero {
+  height: 700px;
+  color: #fff;
+  padding: 30px;
+  margin-top: -20px;
+}
+
+body#landing #hero h1{
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+body#landing div.email{
+  margin-top: 50px;
+}
+body#landing div.email input {
+  width: 255px;
+  //border: 2px solid #d7e1e6;
+  border: 3px solid  #666;
+  border-radius: 5px;
+  background: transparent;
+  font: inherit;
+  height: 50px;
+  line-height:30px;
+  //color: #d7e1e6;
+  color: #666;
+  font-size: 12px;
+  padding: 0 10px;
+  background: rgba(255,255,255,.7);
+}
+body#landing div.email button {
+font-size: 26px;
+}
+#footer{
+  margin-top: 20px;
+  
+}
+.jumbotron{
+  //opacity:0.5;
+  background-color: rgba(255,255,255,0.9);
+  padding: 15px 60px;
+  color: #666;
+  font-size: 20px;
+}
+.tell-congress{
+  font-size: 60px;
+}
+#emailValidationMessage{
+	color: #F00;
+	font-size: 15px;
+}
+.btn:focus{
+	color: #fff;
+}

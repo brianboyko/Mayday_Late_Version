@@ -1,0 +1,66 @@
+<div id="hero" class="stormflag">
+  {% include indexheader.html %}
+  <div class="inner">
+  <div class="social">
+    <div class="twitter"><a href="https://twitter.com/home?status=Money%20has%20corrupted%20our%20democracy.%20Can%20we%20fix%20it?%20Act%20now,%20join%20%23MAYDAYUS%20--%20let's%20try%20something%20new:%20https://MAYDAY.US" title="Share on Twitter"><span>Share on Twitter</span></a></div>
+    <div class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://mayday.us?1" title="Share on Facebook"><span>Share on Facebook</span></a></div>
+    <div class="email"><form action="https://mayday.us/subscribe" method="get"><input name="email" type="text" placeholder="Enter your email to join the fight..." /><button  type="submit" value="subscribe" title="Submit Email" onSubmit="ga('send', 'event', 'Form', 'Submit', 'Front Page Email']);"><span>Submit Email</span></button></div>
+  </div>
+  <h1>MAYDAY<span>.US</span></h1>
+  <h2>
+    Help U.S. kickstart fundamental reform, <br/>
+    by reducing the influence of money in politics.
+  </h2>
+  <div class="counter">
+    {% include counter.html %}
+  </div>
+  <a class="pledge" href="https://mayday.us/newpledge" onClick="ga('send', 'event', 'Button', 'Click', 'Top Pledge Button Homepage']);">Pledge Now</a>  
+  </div>
+</div>
+
+<div id="intro">
+  <div class="inner">
+  <h1>{{subhead}}</h1>
+  <div class="video"><iframe width="640" height="360" src="//www.youtube.com/embed/unD3mXo5Kt0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+  </div>
+</div>
+
+<div id="timeline">
+  <div class="inner">
+    <div class="timing">{{timeline | markdownify}}</div>
+    <a class="pledge" href="https://mayday.us/newpledge" onClick="ga('send', 'event', 'Button', 'Click', 'Second Pledge Button Homepage']);">Pledge Now</a>
+  </div>
+  <div class="arrow"></div>
+  <div class="inner">
+    <div class="phase_one">
+      {{phase_one | markdownify}}
+    </div>
+    <div class="phase_two">
+      {{phase_two | markdownify}}
+    </div>
+    <div class="timeline_wrapup">
+      {{timeline_wrapup | markdownify}}
+    </div>
+  </div>
+</div>
+
+<div id="mayday">
+  <div class="inner">
+    {{mayday | html}}
+  <div class="social">
+    <a class="pledge" href="https://mayday.us/newpledge" onClick="ga('send', 'event', 'Button', 'Click', 'Last Small Pledge Button Homepage']);">Pledge Now</a>
+    <div class="twitter"><a href="https://twitter.com/home?status=Money%20has%20corrupted%20our%20democracy.%20Can%20we%20fix%20it?%20Act%20now,%20join%20%23MAYDAYUS%20--%20let's%20try%20something%20new:%20https://MAYDAY.US" title="Share on Twitter"><span>Share on Twitter</span></a></div>
+    <div class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://mayday.us" title="Share on Facebook"><span>Share on Facebook</span></a></div>
+  </div>
+  </div>
+</div>
+
+	  
+
+{% include footer_new.html %}
+  <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->

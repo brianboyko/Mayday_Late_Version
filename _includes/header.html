@@ -1,0 +1,26 @@
+<!--Menu & Logo-->
+<div class="full-width" id="header">
+{% if page.headerType == 'goodfight' %}
+  <img src='/images/mayday-goodfightheader-v1p2.png' id='goodfightHeader'>
+{% else %}
+  <h3><a href="/">MAYDAY<span>.US</span></a></h3>
+{% endif %}
+  <div class="topmenu_entire">
+
+   <a href="/">Home</A>
+   <a href="https://my.mayday.us/dashboard" id="mysuperpac_topmenu">My SuperPAC</A>
+   <a href="/contact">Contact</A>
+   <a href="/about">About Us</A>
+   <a href="/videos">Videos</A>
+   <a href="/media">Press</A>
+   <a href="/ways">Ways to Help</A>
+   <a href="/faq">FAQ</A>
+   <a href="/" id="login_topmenu" style="display:none;" >
+     <div data-toggle="modal" data-target="#login_modal">Login</div>
+   </a>
+
+  </div> 
+
+</div>
+
+{% include login_modal.html %}

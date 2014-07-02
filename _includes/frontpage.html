@@ -1,0 +1,111 @@
+<div id="hero" class="container-fluid">
+  {% include indexheader.html %}
+  <div class="inner">
+    <h1>MAYDAY<span>.US</span></h1>
+    <h2>
+      Help U.S. kickstart* fundamental reform, <br/>
+      by reducing the influence of money in politics.
+    </h2>
+    <div class="row">
+      <div class="counter col-sm-6 col-sm-offset-3">
+        <div class="thermometer active">
+          <div class="label" id="progressLeftLabel">Loading...</div>
+          <div class="progress_bar" style="width: 70%" id="progress_bar"></div>
+        </div>
+        <div class="phase_two_details">
+          <div class="goal">
+            <h4>Goal: 1 of $5M</h4>
+          </div>
+          <h4><span id="raised">Loading...</span></h4>
+        </div>
+        <script src="{{site.baseurl}}/js/mayday_progress.js?1"></script>
+      </div>
+    </div>
+    <a class="pledge" href="https://mayday.us/newpledge" onClick="_gaq.push(['_trackEvent', 'Button', 'Click', 'Top Pledge Button Homepage']);">
+      Pledge Now
+    </a>
+    <div id="kickstart-explanation">
+      *We keep your money only if we meet our goal
+    </div>
+  </div>
+</div>
+<div id="socialBar" class="container-fluid">
+  <div class="social">
+    <div class="twitter"><a href="https://twitter.com/home?status=Money%20has%20corrupted%20our%20democracy.%20Can%20we%20fix%20it?%20Act%20now,%20join%20%23MAYDAYUS%20--%20let's%20try%20something%20new:%20https://MAYDAY.US" title="Share on Twitter"><span>Share on Twitter</span></a></div>
+    <div class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://mayday.us?1" title="Share on Facebook"><span>Share on Facebook</span></a></div>
+    <div class="email">
+      <div class="email">
+        <form action="https://pledge.mayday.us/r/subscribe" method="post">
+          <input type="hidden" name="redirect" value="https://mayday.us/subscribe/" />
+          <input type="hidden" name="source" value="landing" />
+          <input name="email" type="text" placeholder="Enter your email to join the fight..." />
+          <button  type="submit" value="subscribe" title="Submit Email" onSubmit="_gaq.push(['_trackEvent', 'Form', 'Submit', 'Front Page Email']);">
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="intro" class="container-fluid">
+  <h1>{{subhead}}</h1>
+  <div class="video"><iframe width="640" height="360" src="//www.youtube.com/embed/unD3mXo5Kt0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+</div>
+
+<div id="timeline" class="container-fluid">
+  <div class="inner row col-sm-8 col-sm-offset-2">
+    <div class="timing">{{timeline | markdownify}}</div>
+    <a class="pledge" href="https://mayday.us/newpledge" onClick="_gaq.push(['_trackEvent', 'Button', 'Click', 'Second Pledge Button Homepage']);">Pledge Now</a>
+  </div>
+  <div class="arrow row"></div>
+  <div class="inner row col-sm-8 col-sm-offset-2">
+    <div class="phase_one">
+      {{phase_one | markdownify}}
+    </div>
+    <div class="phase_two">
+      {{phase_two | markdownify}}
+    </div>
+    <div class="timeline_wrapup">
+      {{timeline_wrapup | markdownify}}
+    </div>
+  </div>
+</div>
+
+  <div id="mayday" class="container-fluid">
+    <div class="inner row col-sm-9 center-block">
+      {{mayday | html}}
+      <div class="social col-sm-4">
+        <a class="pledge" href="https://mayday.us/newpledge" onClick="_gaq.push(['_trackEvent', 'Button', 'Click', 'Last Small Pledge Button Homepage']);">Pledge Now</a>
+      </div>
+      <div class="social col-sm-4">
+        <div class="twitter"><a href="https://twitter.com/home?status=Money%20has%20corrupted%20our%20democracy.%20Can%20we%20fix%20it?%20Act%20now,%20join%20%23MAYDAYUS%20--%20let's%20try%20something%20new:%20https://MAYDAY.US" title="Share on Twitter"><span>Share on Twitter</span></a></div>
+      </div>
+      <div class="social col-sm-4">
+        <div class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://mayday.us" title="Share on Facebook"><span>Share on Facebook</span></a></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  /*$( document ).ready(function() {
+    window.mayOneSelectedImg = 0;
+    window.setInterval(function() {
+      var imgs = $(".campaign-hero-slider-item");
+      var oldIndex = window.mayOneSelectedImg;
+      window.mayOneSelectedImg = (window.mayOneSelectedImg + 1) % 5;
+      $(imgs[window.mayOneSelectedImg]).fadeIn(400);
+      $(imgs[window.mayOneSelectedImg]).addClass("current");
+      $(imgs[oldIndex]).fadeOut(400);
+      $(imgs[oldIndex]).removeClass("current");
+    }, 5000);
+  });*/
+</script>
+
+{% include footer_new.html %}
+  <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->

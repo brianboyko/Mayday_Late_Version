@@ -1,0 +1,285 @@
+<h2>Up to June 27, we've received more than 22,700 donations from across the nation.</h2>
+<div class='map-container'>
+  <div id='map'></div>
+</div>
+<h2>Scroll down to see the amounts people like you have donated. Click to see where the donations come from.</h2>
+<p>
+  Rank by
+  <a href='#' class='toggle' id='count'>Count of Donation</a>
+  <a href='#' class='toggle' id='category'>Amount Donated</a>
+</p>
+<div class='graph'>
+  <div class='histogram'></div>
+</div>
+<style>
+  .map-container {
+    padding:5px;
+    border:1px solid #ddd;
+  }
+  #map {
+    position:relative;
+    height:400px;
+  }
+  p {
+    font-size:12px;
+    margin:10px 0;
+    font-weight:bold;
+  }
+  .toggle:first-child {
+    margin-left:12px;
+  }
+  .toggle,
+  .toggle:hover,
+  .toggle:active {
+    display:inline-block;
+    padding:4px 10px;
+    border:1px solid #ddd;
+    text-decoration:none!important;
+    -webkit-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    transition: all 200ms linear;
+  }
+  .toggle:hover,
+  .toggle.active {
+    background:#eee;
+  }
+  .histogram {
+    font-size:14px;
+    font-family:'Questrial',Arial,sans-serif;
+  }
+  .states {
+    border-collapse:inherit;
+    position:absolute;
+    top:625px;
+    left:625px;
+    width:120px;
+    padding:0 10px 10px;
+    border:1px solid #537288;
+    font-size:12px;
+  }
+  .states.fixed {
+    position:fixed;
+    top:10px;
+    left:676px;
+  }
+  .category {
+    cursor:pointer;
+  }
+  .category:hover,
+  .category.hover {
+    fill:#537288;
+  }
+  .bar {
+    cursor:pointer;
+    fill:#8FAEC3;
+    -webkit-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    transition: all 200ms linear;
+  }
+  .bar:hover,
+  .bar.hover {
+    fill:#537288;
+  }
+</style>
+<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.9/d3.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore.js"></script>
+<script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.css' rel='stylesheet' />
+<script>
+var margin = {right:60, left:60},
+  width = 500 - margin.left - margin.right,
+  barHeight = 22;
+
+function getKey(collection){
+  return _.chain(collection)
+    .keys()
+    .value();
+}
+
+function getValue(collection){
+  return _.chain(collection)
+    .values()
+    .value();
+}
+
+d3.csv('{{site.baseurl}}/data/pledges.csv',function(error,data){
+  // ----------------------
+  // format data
+  // ----------------------
+  var dollars = data.map(function(d){return parseInt(d.dollars)}),
+      dollarCounts = _.countBy(dollars);
+
+
+  var dollarsFormatted = getKey(dollarCounts).map(function(d,i){
+      return {
+        category:d,
+        categoryCount:parseInt(getValue(dollarCounts)[i])
+      };
+  });
+
+  dollarsFormatted = _.filter(dollarsFormatted,function(o){return o.category != 'NaN';});
+
+  //add states information associated with each count
+  var statesPerCategory = dollarsFormatted.forEach(function(d){
+    var associated = _.where(data,{dollars:d.category});
+
+    var states = _.chain(associated)
+      .map(function(o){return o.state})
+      .countBy()
+      .value();
+
+    d.states = getKey(states).map(function(d,i){
+      return {
+        state:d,
+        stateCount:parseInt(getValue(states)[i])
+      };
+    });
+
+    d.states = _.sortBy(d.states,function(d){
+      return -d.stateCount;
+    });
+  });
+
+  // index data
+  var index = d3.range(dollarsFormatted.length),
+      indexSorted = _.sortBy(index,function(i){return -dollarsFormatted[i].categoryCount;});
+
+  // define height based on the size of the dataset
+  var height = barHeight * dollarsFormatted.length;
+
+  var svg = d3.select('.histogram').append('svg')
+    .attr('width',width + margin.left + margin.right)
+    .attr("height", height )
+  .append('g')
+    .attr('transform','translate(' + margin.left + ',-80)');
+
+  // cal width
+  var x = d3.scale.linear()
+      .range([0, width])
+      .domain([0, d3.max(dollarsFormatted,function(d){return d.categoryCount;})]);
+
+  // How many bars?
+  var y = d3.scale.ordinal()
+    .rangeRoundBands([0, height], .1)
+    .domain(indexSorted);
+
+  // bind data
+  var bar = svg.selectAll('.bar')
+    .data(dollarsFormatted)
+  .enter().append('g')
+    .attr('class','barGroup')
+    .attr('transform', function(d, i) { return 'translate(0,' + y(i) + ')'; });
+
+  // generate bars
+  bar.append('rect')
+    .attr('class','bar')
+    .attr('width',function(d){return x(d.categoryCount)+2;}) // plus 2 to give small counts a visible width
+    .attr('height',y.rangeBand())
+    .on('click',function(d){
+      clearSelection();
+
+      d3.select(this).classed({'hover':true,'clicked':true});
+      d3.select(this.parentNode.childNodes[1]).classed({'hover':true});
+
+      addTable(d);
+    });
+
+  bar.append('text')
+    .attr('class','category')
+    .attr('x', '-60')
+    .attr('y', y.rangeBand()-8)
+    .attr('dy', '.35em')
+    .text(function(d) {
+        return '$' + d.category;
+    })
+    .on('click',function(d){
+      clearSelection();
+
+      d3.select(this).classed({'hover':true});
+      d3.select(this.parentNode.childNodes[0]).classed({'hover':true});
+
+      addTable(d);
+    });
+
+  bar.append('text')
+    .attr('class','categoryCount')
+    .attr('x',function(d) { return x(d.categoryCount) + 10; })
+    .attr('y',y.rangeBand()-8)
+    .attr('dy','.35em')
+    .text(function(d){return d.categoryCount;});
+
+  d3.selectAll(".toggle").on("click", change);
+
+  // ----------------------
+  // events
+  // ----------------------
+  function clearSelection(){
+    d3.select('.states').remove();
+    d3.selectAll('rect').classed({'hover':false});
+    d3.selectAll('text').classed({'hover':false});
+  };
+
+  function addTable(object){
+    var table = d3.select('.histogram').append('table');
+
+    if ($(window).scrollTop() >= $('svg').offset().top) {
+      table.attr('class','states fixed')
+    } else {
+      table.attr('class','states')
+    };
+
+    var title = '<p>'+ object.categoryCount + ' Donations of $' + object.category + '</p>',
+      html = '';
+
+    object.states.forEach(function(o){
+      name = (o.state.length > 0) ? o.state : 'N/A';
+      html += '<tr><td>' + name  + '</td><td>' +
+              o.stateCount + '</td></tr>';
+    });
+
+    table.html(title + html);
+  }
+
+  function change(){
+
+    if (this.id === 'category') {
+      y.domain(index);
+    } else {
+      y.domain(indexSorted);
+    }
+
+    var transition = svg.transition().duration(750);
+
+    transition.selectAll('.barGroup')
+      .attr('transform', function(d, i) { return 'translate(0,' + y(i) + ')'; });
+  }
+
+});
+
+// page interaction
+$('#count').addClass('active');
+
+$('.toggle').on('click',function(e){
+  e.preventDefault();
+  $('.toggle').removeClass('active');
+  $(this).toggleClass('active');
+});
+
+$(window).scroll(function(){
+  var listHeight = $('.states').height();
+
+  if ($(window).scrollTop() >= $('svg').offset().top && listHeight < $(window).height() - 100) {
+    $('.states').addClass('fixed');
+  } else {
+    $('.states').removeClass('fixed');
+  }
+});
+
+// set up map
+var map = L.mapbox.map('map', 'devseed.ilinehc9',{
+  minZoom:3,
+  maxZoom:12
+}).setView([40,-98],4);
+</script>

@@ -1,0 +1,30 @@
+<!--Menu & Logo-->
+    <div class="full-width">
+      <div class="menu-row row">
+    <a name="href="#" id="login_topmenu" style="display:none;" >
+      <div class="topmenu_red col-md-1" data-toggle="modal" data-target="#login_modal">Login</div>
+    </a>
+	<!-- The header.html/indexheader.html is a workaround - when we go to production we can replace this stuff with absolute links. 
+	
+	In short the reason for the two files is that index.html resides at baseurl/ and so the relative path to FAQ is /faq. But the subpages are referred to by directory - baseurl/about has a relative path to FAQ at ../faq.  
+	
+	Long story short, this will work, but it's kludgy and we can create a unified system as soon as we have permalinks to create absolute paths. 
+
+	-->
+    <a href="{{ site.baseurl }}/mysuperpac" id="mysuperpac_topmenu"><div class="topmenu_red col-md-1">My SuperPAC</div></A>
+    <a href="{{ site.baseurl }}/contact"><div class="topmenu topmenu col-md-1">Contact</div></A>
+    <a href="{{ site.baseurl }}/about"><div class="topmenu col-md-1">About Us</div></A>
+    <a href="{{ site.baseurl }}/videos"><div class="topmenu col-md-1">Videos</div></A>
+    <a href="{{ site.baseurl }}/media"><div class="topmenu col-md-1">Press</div></A>
+    <a href="{{ site.baseurl }}/ways"><div class="topmenu col-md-1">Ways to Help</div></A>
+    <a href="{{ site.baseurl }}/faq"><div class="topmenu col-md-1">FAQ</div></A>
+
+        </div>
+    </div>
+    <div class="container">
+    <div class="logo-row row">
+        <a href="/"><img src="images/logo_mayday.png"></A>
+      </div>
+  </div>
+
+{% include login_modal.html %}

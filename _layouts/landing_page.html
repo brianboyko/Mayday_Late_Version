@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/landing.css" />
+  <script src="//cdn.optimizely.com/js/210578001.js"></script>
+  <script>
+/**
+ * Validates the email, then submits the form and GA even accordingly 
+ * @return true - If form validates and GA event is sent
+ * @return false - Otherwise, User is notified to correct email
+ */
+function lpValidate(){
+	var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+	var label = 'Email Petition LP 1 ' + $('#emailInputID').val();
+	if(regex.test($('#emailInputID').val()))  {
+		ga('send', 'event', 'Form', 'Submit', label);
+		return true;
+	}
+	else {
+		$( '#emailValidationMessage' ).text('Please Enter a Valid Email');
+		return false;
+	}
+}
+</script>
+  <body id="{{page.cssid}}">
+    {{ content }}
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+<script src="//fgnass.github.io/spin.js/spin.min.js"></script>
+
+<div id="content" class="row">
+    <div class="row">
+      <form action='https://pledge.mayday.us/r/subscribe' method='post'>
+
+        <div class="row">
+          <div class="input-group input-group-lg">
+		        <label>Email (required)</label>
+            <input id='email_input' type="email" required name="email" class="form-control">
+          </div>
+        </div>
+
+        <div class="row">
+           <div class="input-group input-group-lg">
+		     <label>First Name</label>
+            <input type="text" name="first_name" class="form-control">
+          </div>
+        </div>
+
+        <div class="row">
+           <div class="input-group input-group-lg">
+		     <label>Last Name</label>
+            <input type="text" name="last_name" class="form-control">
+          </div>
+        </div>
+
+        <div class="row">
+           <div class="input-group input-group-lg">
+		     <label>Zipcode</label>
+            <input type="text" name="zipcode" class="form-control">
+          </div>
+        </div>
+
+        <div class="row">
+           <div class="input-group input-group-lg">
+		     <label class="checkbox"><input type="checkbox" name="volunteer" class="form-control" onclick="document.getElementById('skills_section').style.display = 'block';"> Are You Able to Volunteer?</label>
+          </div>
+        </div>
+
+        <div id="skills_section" class="row" style="display:none">
+           <div class="input-group input-group-lg">
+		     <label><input type="text" name="skills" class="form-control" maxlength="254"> Do you have any specific skills that can help us with organizing? (Both technical and non-technical!)</label>
+          </div>
+        </div>
+
+        <div class="row">
+           <div class="input-group input-group-lg">
+		     <label class="checkbox" id="rootstrikersCheckbox"><input type="checkbox" name="rootstrikers" class="form-control" checked> Receive updates from Rootstrikers, a MAYDAY.us ally working to remove the root problem of corruption from American government.</label>
+          </div>
+        </div>
+
+        <input type="hidden" name="source" id="sourceElement" value="{% if page.mailchimpSource %}{{ page.mailchimpSource }}{% else %}subscribe{% endif %}"/>
+
+        <div ng-show="! ctrl.spinning" class="row">
+           <span class="input-group-btn">
+              <button id="submitButton" type="submit" class="btn btn-primary">Subscribe</button>
+            </span>
+        </div>
+
+        <div ng-show="ctrl.spinning" class="row">
+          <div id="spinButton" class="spacing" style="position:relative;"></div>
+        </div>
+
+        <div ng-show="ctrl.error" class="edd_errors row">
+          <p id="error"></p>
+        </div>
+
+      </form>
+
+    </div>
+</div>
+
+<script>
+  function getParameterByName(name) {
+      name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+      var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+      return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+  }
+
+$( document ).ready( function() {
+  var email = getParameterByName('email'); 
+  var source_val = getParameterByName('source'); 
+  var email_input = document.getElementById("email_input");
+  var source_input = document.getElementById("sourceElement");
+  email_input.value=email;
+  source_val = source_val || null;
+  if (source_val) {
+    source_input.value = source_val;
+  }
+});
+
+</script>

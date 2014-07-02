@@ -1,0 +1,119 @@
+---
+layout: newpledge
+title: MAYDAY.US - A Crowdfunded, Kickstarted SuperPAC to end all SuperPACs
+omit_title_suffix: true
+cssid: newpledge
+---
+
+	<div id="pledgeTopBar">
+		<h3>MAYDAY<span>.US</span></h3>
+	</div>
+	<div class="jumbotron">
+	  <div id="pledgeBox">
+		<div class="info">
+			<h2>Help End Big Money Politics</h2>
+			<p>Help us reduce the influence of money in politics and elect a Congress committed to fundamental reform by 2016</p>
+		</div>
+		
+		<div class="stepContainer">
+			<h3>Pledge In Two Minutes Or Less</h3>
+			<ul class="steps">
+				<li id="step-1" class="step active">Amount<span>1</span></li>
+				<li id="step-2" class="step">Info<span>2</span></li>
+				<li id="step-3" class="step">Payment<span>3</span></li>		
+			</ul>
+		</div>
+		
+		<div class="step-1-container">
+			<div class="ammount-button" onclick="step2(10);">$10</div>
+			<div class="ammount-button" onclick="step2(25);">$25</div>
+			<div class="ammount-button" onclick="step2(50);">$50</div>
+			<div class="ammount-button" onclick="step2(100);">$100</div>
+			<div class="ammount-button" onclick="step2(250);">$250</div>
+			<div class="ammount-button" onclick="step2(500);">$500</div>
+			<div class="ammount-button" onclick="step2(1000);">$1000</div>
+			<div class="ammount-button" onclick="step2(2500);">$2500</div>
+			<div class="ammount-button" onclick="step2(-1);">Other</div>
+			<div style="clear:both;"></div>
+			<HR />
+			<div style="margin:10px 0px;"><strong>Or:</strong><a href="https://mayday.us/bitcoin/"><img width="150px" src="/images/donate-with-bitcoin.png"></a></div>
+		</div>
+		
+		<div class="step-2-container">
+			  <form id="pledgeForm" role="form" method="POST" onsubmit="step3();" action="javascript:;">
+		        <div class="form-group col-sm-6"><label class="control-label">Email</label><input type="email" required placeholder="smith@example.com" class="form-control input-lg" id="email_input" /></div>
+		        <div class="form-group col-sm-6"><label class="control-label">Phone Number <span class="label label-default">Optional</span></label><input type="tel" placeholder="(212) 867-5309" class="form-control input-lg" id="phone_input" /></div>
+		        <div class="form-group col-sm-6"><label class="control-label">Occupation</label><input type="text" required placeholder="Gardener, Railroad Worker, etc"  class="form-control input-lg" id="occupation_input"/></div>
+		        <div class="form-group col-sm-6"><label class="control-label">Employer</label><input type="text" required placeholder="Nintendo, UPS, Self, etc" class="form-control input-lg" id="employer_input" /></div>
+		        <div class="form-group col-sm-6">
+		          <label class="control-label">Who to Fund?</label>
+		          <select  class="form-control input-lg" id="targeting_input">
+		            <option>Whatever Helps</option>
+		            <option>Democrats Only</option>
+		            <option>Republicans Only</option>
+		          </select>
+		        </div>
+		        {% if page.includeSurvey %}
+		          <div class="form-group col-sm-6">
+		            <label class="control-label">What tactics to use?</label>
+		            <select  class="form-control input-lg" id="survey_input">
+		              <option>Digital voter registration ads to grow the electorate</option>
+		              <option>Video trackers to force candidate transparency</option>
+		              <option>No robocalls</option>
+		              <option>State-of-the-art digital canvassing and field tools</option>
+		              <option>No negative ads</option>
+		              <option>Whatever helps us win</option>            
+		            </select>
+		          </div>
+		        {% endif %}
+		        <div class="form-group col-sm-6">
+		          <label class="control-label">How Much to Pledge ($)?</label>
+		          <input type="number" required min="1" placeholder="25, 100, 5000" class="form-control input-lg" id="amount_input">
+		        </div>
+		        <div id="donation-type" class="form-group col-sm-6">
+		          <div class="checkbox"><label><input type="checkbox" id="directDonate_input"> I want my donation to be used to support MAYDAY.US, even if the goal has not been met by July 4th.</label></div>
+		          <div class="checkbox"><label><input type="checkbox" id="emailSignupInput" checked> Want to know how we're using the money? Sign up for emails from us.</label></div>
+		        </div>
+		        <div id="formError" class="alert alert-danger" style="display:none">
+		        </div>
+
+
+              
+		        <div class="form-group col-sm-6">
+		          <button id="pledgeButton" style="width:100%;" class="btn ammount-button">
+		            <div style="display:none" class="spinner"></div>
+		            <span class='pledgeText'>Pledge Now</span>
+		          </button>
+		        </div>
+		        <div class="form-group col-sm-12" id="paypalArea">
+              <p>If we don't meet our target, you don't pay. We'll charge your card now, 
+              but if we fail to meet our $5M goal by July 4th, your pledge will be refunded.</p>
+              
+              <p>Some supporters prefer to donate regardless of whether we
+              meet our goal or not. If you choose that option above, we'll do
+              our best to make your donation count no matter what happens.</p>
+              
+              <p>We now also accept PayPal for non-refundable donations:</p>
+              <a href="javascript:;" id='paypalButton'><img alt="Pledge with Paypal" src="/images/paypal.png"/></a>
+            </div>
+		      </form>
+			
+		</div>
+	  </div>
+	  <div id="rules" class="well row">
+		<h2>Contribution Rules:</h2>
+		<p>In order to contribute, all of the following statements must be true:</p>
+		<ul>
+			<li>I am a United States citizen or a permanent resident alien.</li>
+			<li>This contribution is made from my own funds, and funds are not being provided to me by another person or entity for the purpose of making this contribution.</li>
+			<li>I am making this contribution with my own personal credit card and not with a corporate or business credit card or a card issued to another person.</li>
+			<li>I am at least eighteen years old.</li>
+			<li>I am not a foreign national (permanent resident aliens excepted), federal contractor, national bank, or corporation chartered by an act of Congress</li>
+		</ul>
+		<p>MayDay PAC must use its best efforts to obtain and report the name, address, occupation, and employer of individual contributors.</p>
+		<p>Contributions are not tax deductible.</p>
+		<p><a href="//mayday.us/privacy-policy">Our Privacy Policy</a></p>
+    </div>
+	</div>
+	
+{% include footer.html %}

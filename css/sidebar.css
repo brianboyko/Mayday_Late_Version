@@ -1,0 +1,31 @@
+#sidesocial a span {
+  display: none;
+}
+
+#sidesocial .facebook a {
+  width: 32%;
+  height: 45px;
+  float: left;
+  display: inline-block;
+
+  background: url('../images/social_facebook.png') no-repeat center center;
+}
+#sidesocial .twitter a {
+  width: 32%;
+  height: 45px;
+  float: left;
+  display: inline-block;
+
+  background: url('../images/social_twitter.png') no-repeat center center;
+}
+
+#sidesocial .email a {
+  width: 32%;
+  height: 45px;
+  float: left;
+  display: inline-block;
+  margin-bottom: 45px;
+
+  background: url('../images/social_email.png') no-repeat center center;
+  background-size: contain;
+}
