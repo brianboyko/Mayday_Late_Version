@@ -1,0 +1,39 @@
+---
+layout: default
+title: Mayday.US - Our blog
+omit_title_suffix: true
+cssid: blog
+og_title: Mayday.US's blog page
+og_description: Read up on Mayday.US's blog to find out what's happening with the world's first citizen-crowdfunded SuperPAC
+---
+
+
+{% capture subhead %}
+
+A citizen-funded super PAC, to end all super PACs.
+
+{% endcapture %}
+
+{% capture pageid %}
+
+blog
+
+{% endcapture %}
+
+{% capture content %}
+
+# Mayday PAC Official Blog
+
+{::options parse_block_html="true" /}
+
+<ul>
+	{% for post in site.posts %}
+	  <LI>
+	    <a href="{{ post.url }}">{{ post.pubdate}}&nbsp;&mdash;&nbsp;{{ post.title }}</a>
+	   </LI>
+   {% endfor %}
+</ul>
+
+{% endcapture %}
+
+{% include pledgeSubpage.html %}
