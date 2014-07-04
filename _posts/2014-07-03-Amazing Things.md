@@ -1,0 +1,54 @@
+---
+layout: post
+title: The Near Future and Other Amazing Things 
+pubdate: 2014-07-05
+author: Brian Boyko, Deputy CTO
+comments: true
+---
+
+First off, *thank you!*
+
+I mean this. This... I mean, *wow.*
+
+Do you realize how much we *have* accomplished? Nobody has ever done anything like this in American history!
+
+### **We've proved to naysayers and doubters that, yes, Americans care about this issue and they are willing and able to act on it.**
+
+That's something that nobody inside the Beltway understood before now. (And if they still don't understand it, they're in for a very rude awakening indeed.) More than that, we've proven it to ourselves. 
+
+Back in April, when I told friends that we were going to raise money to solve the problem of big-money politics, the answer was a universal: "S-yeah, good luck with that, (moron.)" That was the politics of resignation - people didn't believe that something could be done - so they didn't dare to hope. 
+
+But more often I'm seeing people start to believe that we really can get substantive reform - enough to get Congress working again. And if we've awakened America to the fact that, yes, this is a solvable problem, then there's no doubt in my mind that it will be solved. 
+
+### I suppose what I'm trying to say is: *Oh my god, you guys are awesome.*
+
+But we can't sit down and congratulate ourselves for too long. Ahead is a road filled with hard choices, hard battles, and most of all, hard work. And while we will celebrate our victory we still have some things we need to do. 
+
+### In the short term, here's what's going to happen.
+
+1. We'll continue to [accept donations from contributors](https://pledge.mayday.us/pledge) but they will no longer be contingent. 
+
+2. Everyone who made a contingent pledge will get an e-mail. That email will contain a link to a page where, *if and only if they wish,* they may choose to turn their contingent pledge into a donation. (We think most people will, but we will remain true to our word and refund anyone who wants a refund. It should also be pointed out that this is likely another precedent - a Super PAC giving money **back** to thousands of people just because it said it would.)
+
+3. We'll process refunds as quickly as possible, but right now we can only refund pledges manually (we're working on ways to automate the process but haven't found one yet.) We hope it'll take less than 24 hours, but if it takes longer, we'll keep you updated. 
+
+4. After all of that is concluded, we'll calculate how far we've gone, how far we have to go, and keep working towards our goals.
+
+### What does it mean that we didn't make the $5M goal? 
+
+Well, all things considered, it would have been better to have made it, but not much changes. 
+
+We are still going to try to [raise the remaining funds we need to get to a total of $12M](https://pledge.mayday.us/pledge) - which we would have had to do anyway.  But now we need to think beyond simple fundraising, and start thinking about how to get the most out of not only the money we've collected but more importantly the great community we've built. It's never been reaching *your money.* It's been about *you.* (I know that sounds corny, but it's true.)
+
+We need *you* to help build social networks - in both the techie and non-techie version of the term "social network."  We need you to start getting active and supporting candidates who have committed to reform (and pestering candidates who haven't yet.) And we need something else: your genius.
+
+If we win, it's not going to be because we had more money than other Super PACs, or even because we've got more people on our side (though we can't win *without* more people on our side, certainly.) It'll be because when you have ideas, we'll help empower each other to see those ideas to fruition.  We're not just going to re-invent campaign finance, we also intend to reinvent campaigning itself. We'll need to be disruptive, in all the good ways. 
+
+If you have an idea, and you think it's good - you don't need our permission, just get out there and go for it. We'll try to help as much as we can but ultimately, what will make this movement work is what we can do on the ground, across the United States. And even if you're not in one of the districts where the money we've raised together will be in play, we are still fighting a national campaign for reform. So we want to get politicians thinking about reform now for when we launch our even bigger campaign in 2016.  
+
+So, yeah, we've all got a lot of hard work to do if we want to fix this country's ailments, but I think these past two months have proved that all of us together are up to the task.  
+
+The team here at Mayday PAC has learned a great deal in the past two months, and we've raised a good portion of what we need to succeed. We'll be selecting initial races that we plan to target very soon, and we're going to engage our community on our core mission of winning elections --  starting now.
+
+I'm going to close with one of my favorite quotes: **"We've done the impossible, and that makes us mighty."**
+

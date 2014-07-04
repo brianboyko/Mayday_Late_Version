@@ -32,7 +32,7 @@ $(document).ready(function () {
 
   // javascript is so awesome. this is how you write June 1st. Cause June is the
   // 5th month, indexed by zero. thanks javascript!
-  var date_its_over = Date.UTC(2014,06,05,04,00,00,00);
+  var date_its_over = Date.UTC(2014,10,04,05,00,00,00);
   var days_left = Math.ceil((date_its_over - Date.now())/(1000*24*60*60));
   var days_left_message = '' + days_left + ' days left';
   if (days_left == 1) {
