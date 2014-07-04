@@ -510,6 +510,16 @@ h2 {
 		color: #999;
 	}
 
+
+.sidebar .hide-mobile,
+.sidebar .about-page-only {
+display:none;
+}
+
+#about .sidebar .about-page-only {
+display:inline;
+}
+
 /* Responsive stuff
 ======================================================================== */
 @media screen and (max-width: 1080px) {
