@@ -9,21 +9,23 @@ First off, *thank you!*
 
 I mean this. This... I mean, *wow.*
 
-Yes - first we do have to acknowledge that we didn't *technically* meet our arbitrary and self-defined goal of $5M by July 4th. But do you realize how much we *have* accomplished? We raised $1M in 13 days to begin with, and $4M in pledges isn't anything to sneeze at. 
+Do you realize how much we *have* accomplished? Nobody has ever done anything like this in American history. 
 
 ### **We've proved to naysayers and doubters that, yes, Americans care about this issue and they are willing and able to act on it.**
 
-That's something that nobody inside the Beltway understood before now. And if they still don't understand it, they're in for a very rude awakening indeed. More than that, we've proven it to ourselves. 
+That's something that nobody inside the Beltway understood before now. (And if they still don't understand it, they're in for a very rude awakening indeed.) More than that, we've proven it to ourselves. 
 
-Back in April, when I told friends that we were going to raise money to solve the problem of big-money politics, the answer was a universal: "Sheah, good luck with that, (moron.)" But more often I'm seeing people start to believe that we really can get this done. And if we've awakened America to the fact that, yes, this is a solvable problem, then there's no doubt in my mind that it will be solved. 
+Back in April, when I told friends that we were going to raise money to solve the problem of big-money politics, the answer was a universal: "S-yeah, good luck with that, (moron.)" That was the politics of resignation - people didn't believe that something could be done - so they didn't dare to hope. 
+
+But more often I'm seeing people start to believe that we really can get substantive reform - enough to get Congress working again. And if we've awakened America to the fact that, yes, this is a solvable problem, then there's no doubt in my mind that it will be solved. 
 
 ### I suppose what I'm trying to say is: *Oh my god, you guys are awesome.*
 
-But we can't sit down and congratulate ourselves for too long. Ahead is a road filled with hard choices, hard battles, and most of all, hard work. And while we will celebrate our victory - and it was a victory - we still have some things we need to do. 
+But we can't sit down and congratulate ourselves for too long. Ahead is a road filled with hard choices, hard battles, and most of all, hard work. And while we will celebrate our victory we still have some things we need to do. 
 
 ### In the short term, here's what's going to happen.
 
-1. Everyone who made a contingent pledge will get an e-mail. That e-mail will contain a link to a page where, *if and only if they wish,* they may choose to turn their contingent pledge into a donation.
+1. Everyone who made a contingent pledge will get an e-mail. That email will contain a link to a page where, *if and only if they wish,* they may choose to turn their contingent pledge into a donation.  We think most people will, but we will remain true to our word and refund anyone who wants a refund. It should also be pointed out that this is likely another precedent - a Super PAC giving money **back** to thousands of people just because it said it would.
 
 2. We'll process refunds as quickly as possible, but right now we can only refund pledges manually (we're working on ways to automate the process but haven't found one yet.) We hope it'll take less than 24 hours, but if it takes longer, we'll keep you updated. 
 
@@ -31,16 +33,20 @@ But we can't sit down and congratulate ourselves for too long. Ahead is a road f
 
 ### What does it mean that we didn't make the $5M goal? 
 
-Well, all things considered, it would have been better to have made it, but not making it isn't a disaster. 
+Well, all things considered, it would have been better to have made it, but not much changes. 
 
-If we had reached the $5M goal, it would have been easier to get the remaing we would have been guaranteed a match from our matching donors. Now, we'll still *try* to get whatever funds are conditionally donated matched, but we don't have any agreements or guarantees to that effect. We'll see what happens. 
+We are still going to try to raise the remaining funds we need to get to a total of $12M - which we would have had to do anyway.  But now we need to think beyond simple fundraising, and start thinking about how to get the most out of not only the money we've collected but more importantly the great community we've built. It's never been reaching *your money.* It's been about *you.* (I know that sounds corny, but it's true.)
 
-It also means that we're going to have to place fundraising on a high priority up to election day. Having raised the full $12M would have meant that we could spend less time thinking about how to get to $12M and more time thinking about how to build social networks, how to get out the vote, how to spread the message. Since we still have to raise a few more million before the end, we're going to have to ask you - who have already supported us so much - to help us do these things.
+We need *you* to help build social networks - in both the techie and non-techie version of the term "social network."  We need you to start getting active and supporting candidates who have committed to reform (and pestering candidates who haven't yet.) And we need something else: your genius.
 
-If you have an idea, and you think it's good - you don't need our permission, just get out there and go for it. We'll try to help as much as we can but ultimately, what will make this movement work is what we can do on the ground, across the United States. And even if you're not in one of the five districts where the money we've raised together will be in play, we still want to flip other districts to pro-reformers and prime the pump for 2016. 
+If we win, it's not going to be because we had more money than other Super PACs, or even because we've got more people on our side (though we can't win *without* more people on our side, certainly.) It'll be because when you have ideas, we'll help empower each other to see those ideas to fruition.  We're not just going to re-invent campaign finance, we also intend to reinvent campaigning itself. We'll need to be disruptive, in all the good ways. 
 
-So, yeah, we've all got a lot of hard work to do if we want to fix this country's ailments, but I think these past two months have proved that we're up to the task.  
+If you have an idea, and you think it's good - you don't need our permission, just get out there and go for it. We'll try to help as much as we can but ultimately, what will make this movement work is what we can do on the ground, across the United States. And even if you're not in one of the districts where the money we've raised together will be in play, we are still fighting a national campaign for reform. So we want to get politicians thinking about reform now for when we launch our even bigger campaign in 2016.  
+
+So, yeah, we've all got a lot of hard work to do if we want to fix this country's ailments, but I think these past two months have proved that all of us together are up to the task.  
 
 I'm going to close with one of my favorite quotes: **"We've done the impossible, and that makes us mighty."**
 
 -- Brian Boyko, Deputy CTO, Mayday PAC
+
+
