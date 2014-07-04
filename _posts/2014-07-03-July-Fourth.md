@@ -25,7 +25,7 @@ But we can't sit down and congratulate ourselves for too long. Ahead is a road f
 
 1. Everyone who made a contingent pledge will get an e-mail. That e-mail will contain a link to a page where, *if and only if they wish,* they may choose to turn their contingent pledge into a donation.
 
-2. On midnight, July 7th, we'll assume that anyone who hasn't clicked that link (or opened the e-mail) will get their refunds back on whatever credit or debit card they choose. We'll process them as quickly as possible, but right now we can only refund pledges manually (we're working on ways to automate the process but haven't found one yet.) We hope it'll take less than 24 hours, but if it takes longer, we'll keep you updated. 
+2. We'll process refunds as quickly as possible, but right now we can only refund pledges manually (we're working on ways to automate the process but haven't found one yet.) We hope it'll take less than 24 hours, but if it takes longer, we'll keep you updated. 
 
 3. After all of that is concluded, we'll be able to come to a final number, figure out how much we've raised, how far we have to go, and keep working towards it.
 
@@ -33,7 +33,7 @@ But we can't sit down and congratulate ourselves for too long. Ahead is a road f
 
 Well, all things considered, it would have been better to have made it, but not making it isn't a disaster. 
 
-If we had reached the $5M goal, we would have been guaranteed a match from our matching donors. Now, we'll still *try* to get whatever funds are conditionally donated matched, but we don't have any agreements or guarantees to that effect. We'll see what happens. 
+If we had reached the $5M goal, it would have been easier to get the remaing we would have been guaranteed a match from our matching donors. Now, we'll still *try* to get whatever funds are conditionally donated matched, but we don't have any agreements or guarantees to that effect. We'll see what happens. 
 
 It also means that we're going to have to place fundraising on a high priority up to election day. Having raised the full $12M would have meant that we could spend less time thinking about how to get to $12M and more time thinking about how to build social networks, how to get out the vote, how to spread the message. Since we still have to raise a few more million before the end, we're going to have to ask you - who have already supported us so much - to help us do these things.
 

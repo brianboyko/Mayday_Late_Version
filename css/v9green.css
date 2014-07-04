@@ -413,6 +413,103 @@ h2 {
 		color: #999;
 	}
 
+/* Subpage nav
+======================================================================== */
+#subpage-nav {
+	padding: 10px 0 10px;
+	text-align: center;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAGCAYAAAACEPQxAAAAHUlEQVQImWM4Y2z8n+GMsfF/hv///0MJMcc4CAEA8s8Pw3YWtQgAAAAASUVORK5CYII=) repeat-x 0 0, #fff;
+}
+	#subpage-nav .colls {
+		width: 894px;
+		margin: 20px auto 0;
+		text-align: left;
+		font-size: 18px;
+	}
+		#subpage-nav .coll {
+			float: left;
+			width: 266px;
+			margin-right: 48px;
+		}
+		#subpage-nav .colls .coll:last-child {
+			margin-right: 0;
+		}
+			#subpage-nav .coll h4 {
+				font-size: 18px;
+				color: #313945;
+				margin: 0 0 4px;
+				font-weight: normal;
+				text-transform: uppercase;
+				padding-bottom: 11px;
+				margin: 0 0 14px;
+				border-bottom: 1px solid #ddd;
+				letter-spacing: 1px;
+			}
+			#subpage-nav .coll.connect {
+			}
+				#subpage-nav .coll.connect li {
+					margin-bottom: 15px;
+					word-spacing: .5px;
+				}
+			#subpage-nav .coll.share {
+				padding-top: 2px;
+			}
+				#subpage-nav .coll.share li {
+					padding-left: 5px;
+				}
+					#subpage-nav .coll.share a {
+						padding-left: 45px;
+						display: inline-block;
+						height: 29px;
+						line-height: 29px;
+						background-position: 0 50%;
+						background-repeat: no-repeat;
+						margin-bottom: 22px;
+					}
+					#subpage-nav .coll.share a.twitter {
+						background-image: url("../images/social-twitter.png");
+					}
+					#subpage-nav .coll.share a.facebook {
+						background-image: url("../images/social-facebook.png");
+					}
+					#subpage-nav .coll.share a.email {
+						background-image: url("../images/social-email.png");
+						margin-bottom: 0;
+					}
+			#subpage-nav .coll.pledge {
+			}
+				#subpage-nav .coll.pledge .button {
+					margin-top: 6px;
+				}
+
+	#subpage-nav .navigation {
+		border: solid #ddd;
+		border-width: 1px 0;
+		margin-top: 10px;
+		height: 30px;
+		line-height: 15px;
+	}
+		#subpage-nav .navigation li {
+			display: inline-block;
+			font-size:16px;
+			margin: 0 16px;
+		}
+
+	#subpage-nav .disclaimer {
+		border-bottom: 1px solid #ddd;
+		height: 42px;
+		line-height: 42px;
+		color: #999;
+		margin-bottom: 30px;
+		font-size: 14px;
+		letter-spacing: -.4px;
+	}
+
+	#subpage-nav .copyright {
+		font-size: 14px;
+		color: #999;
+	}
+
 /* Responsive stuff
 ======================================================================== */
 @media screen and (max-width: 1080px) {

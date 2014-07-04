@@ -1,46 +1,31 @@
 /* Header */
 
 #header {
-  background: #204659 url('../images/header_short.jpg') no-repeat center top;
-  padding-bottom: 15px;
+  padding: 18px 0 12px;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
 }
-#header h3 {
-  text-align: center;
-  font-weight: bold;
-  font-size: 3.5em;
-  margin: 0;
-  padding: 0 0 0;
-  height: 158px;
-  line-height: 158px;
-}
-#header h3 span {
-  font-weight: normal;
-}
-#header h3 a {
-  color: #fff;
-}
-#header h3 a:hover {
-  text-decoration: none;
-}
-.topmenu_entire {
-  text-align: center;
-}
-.topmenu_entire a {
-  font-weight: bold;
-  display: inline-block;
-  color: #fff;
-  color: rgba(255,255,255,.8);
-  padding: 0 1px 1px;
-  margin: 10px 10px 0;
-  font-size: 1.1em;
-  border-bottom: 2px solid rgba(255,255,255,.33);;
-}
-.topmenu_entire a:hover {
-  text-decoration: none;
-  color: #fff;
-  border-bottom-color: #fff;
-}
-
+  #header .wrap {
+    width: 1050px;
+  }
+    #header .logo {
+      background-image: url(../images/logo-9.svg);
+      width: 225px;
+      height: 30px;
+    }
+    #header blockquote {
+      float: right;
+      font-style: italic;
+      font-size: 15px;
+      margin: 3px 6px 0 0;
+      color: #313945;
+    }
+    #header blockquote:before {
+      content: "“";
+    }
+    #header blockquote:after {
+      content: "”";
+    }
 /*Hero Text Row*/
 h1#page_title {
   font-size: 2em;

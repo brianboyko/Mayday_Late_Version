@@ -28,7 +28,7 @@
   <div class="pledgepage panel panel-default" >
     <div class="panel-heading">
       <h3 class="panel-title">
-        Pledge now
+        Donate now
       </h3><!-- ./panel-title !-->
     </div><!-- ./panel-heading !-->
     <div class="panel-body">
@@ -59,11 +59,11 @@
           </div>
         {% endif %}
         <div class="form-group col-sm-12">
-          <label class="control-label">How Much to Pledge ($)?</label>
+          <label class="control-label">How Much to Donate ($)?</label>
           <input type="number" required min="1" placeholder="25, 100, 5000" class="form-control input-lg" id="amount_input">
         </div>
         <div id="donation-type" class="form-group col-sm-12">
-          <div class="checkbox"><label><input type="checkbox" id="directDonate_input"> I want my donation to be used to support MAYDAY.US, even if the goal has not been met by July 4th.</label></div>
+          <div style="display:none;">class="checkbox"><label><input type="checkbox" id="directDonate_input" checked> I want my donation to be used to support MAYDAY.US, even if the goal has not been met by July 4th.</label></div>
           <div class="checkbox"><label><input type="checkbox" id="emailSignupInput" checked> Want to know how we're using the money? Sign up for emails from us.</label></div>
         </div>
         <div id="formError" class="alert alert-danger" style="display:none">
@@ -71,7 +71,7 @@
         <div class="form-group col-sm-12">
           <button id="pledgeButton" class="btn">
             <div style="display:none" class="spinner"></div>
-            <span class='pledgeText'>Pledge Now</span>
+            <span class='pledgeText'>Donate Now</span>
           </button>
         </div>
       </form>

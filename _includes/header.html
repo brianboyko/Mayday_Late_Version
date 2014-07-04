@@ -1,26 +1,29 @@
 <!--Menu & Logo-->
-<div class="full-width" id="header">
-{% if page.headerType == 'goodfight' %}
-  <img src='/images/mayday-goodfightheader-v1p2.png' id='goodfightHeader'>
-{% else %}
-  <h3><a href="/">MAYDAY<span>.US</span></a></h3>
-{% endif %}
-  <div class="topmenu_entire">
+  </script>
+  <header id="header">
+    <div class="wrap clearfix">
+      <blockquote>electing a Congress committed to fundamental reform by 2016</blockquote>
+      <a href="/" title="Mayday PAC" class="logo ir">MAYDAY PAC</a>
+    </div>
+  </header>
 
-   <a href="/">Home</A>
-   <a href="https://my.mayday.us/dashboard" id="mysuperpac_topmenu">My SuperPAC</A>
-   <a href="/contact">Contact</A>
-   <a href="/about">About Us</A>
-   <a href="/videos">Videos</A>
-   <a href="/media">Press</A>
-   <a href="/ways">Ways to Help</A>
-   <a href="/faq">FAQ</A>
-   <a href="/" id="login_topmenu" style="display:none;" >
-     <div data-toggle="modal" data-target="#login_modal">Login</div>
-   </a>
+  <section id="subpage-nav">
+    <ul class="navigation nav">
+      <LI><a href="/" id="login_topmenu" style="display:none;" >
+       <div data-toggle="modal" data-target="#login_modal">Login</div>
+      </a></LI>
+      <li><a href="https://my.mayday.us/login" id="mysuperpac_topmenu">My SuperPAC</a></li>
+      <li><a href="/contact">Contact</a></li>
+      <li><a href="/about">About Us</a></li>
+      <li><a href="/videos">Videos</a></li>
+      <li><a href="/media">Press</a></li>
+      <li><a href="/ways">Ways to Help</a></li>
+      <li><a href="/faq">FAQ</a></li>
+      <li><a href="/the-plan">Plan Details</a></li>
+      <li><a href="/your-donations">Data Analysis</a></li>
+    </ul>
+</section>
 
-  </div> 
-
-</div>
+ 
 
 {% include login_modal.html %}
