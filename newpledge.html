@@ -16,7 +16,7 @@ cssid: newpledge
 		</div>
 		
 		<div class="stepContainer">
-			<h3>Pledge In Two Minutes Or Less</h3>
+			<h3>Donate in Two Minutes Or Less</h3>
 			<ul class="steps">
 				<li id="step-1" class="step active">Amount<span>1</span></li>
 				<li id="step-2" class="step">Info<span>2</span></li>
@@ -71,7 +71,7 @@ cssid: newpledge
 		          <input type="number" required min="1" placeholder="25, 100, 5000" class="form-control input-lg" id="amount_input">
 		        </div>
 		        <div id="donation-type" class="form-group col-sm-6">
-		          <div class="checkbox"><label><input type="checkbox" id="directDonate_input"> I want my donation to be used to support MAYDAY.US, even if the goal has not been met by July 4th.</label></div>
+		          <div style="display:none;" class="checkbox"><label><input type="checkbox" id="directDonate_input" checked> I want my donation to be used to support MAYDAY.US, even if the goal has not been met by July 4th.</label></div>
 		          <div class="checkbox"><label><input type="checkbox" id="emailSignupInput" checked> Want to know how we're using the money? Sign up for emails from us.</label></div>
 		        </div>
 		        <div id="formError" class="alert alert-danger" style="display:none">
@@ -86,14 +86,8 @@ cssid: newpledge
 		          </button>
 		        </div>
 		        <div class="form-group col-sm-12" id="paypalArea">
-              <p>If we don't meet our target, you don't pay. We'll charge your card now, 
-              but if we fail to meet our $5M goal by July 4th, your pledge will be refunded.</p>
               
-              <p>Some supporters prefer to donate regardless of whether we
-              meet our goal or not. If you choose that option above, we'll do
-              our best to make your donation count no matter what happens.</p>
-              
-              <p>We now also accept PayPal for non-refundable donations:</p>
+              <p>We now also accept PayPal for donations:</p>
               <a href="javascript:;" id='paypalButton'><img alt="Pledge with Paypal" src="/images/paypal.png"/></a>
             </div>
 		      </form>
